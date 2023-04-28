@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 export const firebase = {
   apiKey: 'AIzaSyD9ltSJ8EBVeaiSDfk9u2N0MfhNcLOcS-w',
@@ -15,4 +15,4 @@ export const firebase = {
   imports: [AngularFireModule.initializeApp(firebase), AngularFirestoreModule],
   exports: [AngularFirestoreModule],
 })
-export class FirebaseModule {}
+export class AppFirebaseModule {}
